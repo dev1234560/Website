@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #ffffff;
+    position: relative;
+}
+html{
+    scroll-behavior: smooth;
+}
+.btns{
+    padding: 6.5em 0.2em 3em 0.2em;
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  .btns button{
+    padding: 5px 10px;
+    margin: 5px;
+
+    font-size: large;
+    font-weight:600;
+    color:rgb(0, 221, 255);
+
+    background-color: #3a3a3a;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  div .container{
+    margin: 0;
+    padding: 0;
+  }
+
+  .Subject{
+    /* margin-left: 25px; */
+  }
+  .box{
+    padding:  5px;
+    margin: 10px;
+
+  }
+  .box button {
+    display: inline-block;
+    text-decoration: none;
+
+    font-size: larger;
+    font-weight: 600;
+    color: #1e00ff;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid rgb(40, 40, 29);
+    border-radius: 10px;
+
+    margin: 0.3em;
+    padding: 10px;
+  }
+
+  .box button:hover{
+    background-color: rgba(86, 181, 194, 0.431);
+  }
+
+  #Lit,#Lang,#Maths,#Physics,#Biology,#Chemistry,#his,#Geography{
+    display: none;
+  }
+
+  .block1{
+    height: 100%;
+  }
+  .nav-item a{
+    font-size:larger;
+    font-weight:bolder;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+}
+
+.navbar{
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+.inline-block{
+  display: inline-block;
+}
+ .class_name{
+  color: white;
+ }
+
+.input {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+.hidden {
+  display: none;
+}
+
+#links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#links li {
+  margin-top: 10px;
+  display: inline;
+}
+
+.cl_name{
+  display: inline;
+}
+
+
+#class_name {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.inline-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prompt button {
+  background: #9fcdfffe;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: #000000;
+}
+
+.back-button {
+  /* position: fixed; */
+  text-decoration: none;
+  border:none;
+  background-color: white;
+  font-size:25px;
+  left: 20px; 
+  font-weight: 700;
+  padding-left: 10px;
+  margin-left: 8px;
+}
+
+/* Password Prompt Styles */
+.prompt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+}
+
+
+#class_name {
+  font-size: 21px;
+  margin-bottom: 15px;
+  color: rgb(0, 0, 0);
+  padding-top: 5px;
+}
+
+label {
+  display: block;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Container for Centering Content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  width: 500px;
+
+}
+
+.inline-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .pdfs{
+  height: auto;
+  font-weight: 600;
+  padding: 0 !important;
+}
+.pdfs a{
+  text-decoration: none;
+  font-size: larger;
+  color: rgb(0, 0, 0);
+  background-color: #d981f495;
+
+  margin: 5px;
+  padding: 8px;
+
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+#mobileOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+  z-index: 10;
+  pointer-events: none;
+  display: none; /* Initially hidden */
+}
+body {
+  -webkit-user-select: none; /* Safari */
+   user-select: none;
+}
+
+
+.iframe-container {
+  position: relative; /* Make the container a positioning context */
+  width: 95%;
+  max-width: 1000px;
+  height: 1000px;
+  display: block;
+ margin: 0 auto;
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.overlay {
+  position: absolute; /* Position the overlay relative to the container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust the height to cover only the top portion */
+  background-color: rgba(0, 0, 0, 0.0); /* Semi-transparent overlay */
+  z-index: 10; /* Ensure the overlay is above the iframe */
+  pointer-events: all; /* Block interactions with the top portion */
+}
+
+
+@media only screen and (max-width: 600px) {
+  iframe {
+      zoom: 1.5; /* Increase zoom for smaller screens */
+  }
+}

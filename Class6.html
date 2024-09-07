@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Class6.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-secondary " >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/coaching/Jupiter-removebg-preview (1).png" alt="Logo" height="55px" width="145px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Notes.html">Notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- <div class="d-flex justify-content-center align-items-center">
+    <div class="spinner-border text-danger"  role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div> -->
+  
+  
+  <div class="btns">
+    
+    <button class="btn" id="litbtn" onclick="blockLit()">English Literature</button>
+    <button class="btn" id="langbtn" onclick="blockLang()">English language</button>
+    <button class="btn" id="mathsbtn" onclick="blockMaths()">Maths</button>
+    <button class="btn" id="Phybtn" onclick="blockPhy()">Physics</button>
+    <button class="btn" id="biobtn" onclick="blockBio()">Biology</button>
+    <button class="btn" id="chembtn" onclick="blockChem()">Chemistry</button>
+    <button class="btn" id="hisbtn" onclick="blockHis()">History and Civics</button>
+    <button class="btn" id="geobtn" onclick="blockGeo()">Geography</button>
+  </div>
+  
+  <button id="backButton" class="hidden back-button"><i class="fa fa-chevron-circle-left"></i></button>
+  <div class="Subject">
+    <div class="box" id="Lit">
+      <button id="WebBtn">Web Development Course</button>
+      <button id="aiBtn">AI/ML Course</button>
+      <button id="cyberBtn">Cyber Security Course</button>
+      <button id="cloudBtn">Cloud Engineering Course</button>
+    </div>
+    <div class="box" id="Lang">
+      <button>Pronouns</button>
+      <button>Subject-Verb</button>
+      <button>Transitive Verbs</button>
+      <button>Tenses</button>
+      <button>Vocabulary</button>
+      <button>Figures of Speech</button>
+    </div>
+    <div class="box" id="Maths">
+      <button>Natural numbers</button>
+      <button>Whole numbers</button>
+      <button>Sets</button>
+      <button>Integers</button>
+      <button>Fractions</button>
+      <button>Playing with numbers</button>
+      <button>Ratio Proportions</button>
+      <button>Algebra</button>
+      <button>Geometry</button>
+    </div>
+    <div class="box" id="Physics">
+      <button>Matter</button>
+      <button>Physical Quantities</button>
+      <button>Force</button>
+      <button>Energy</button>
+      <button>Light</button>
+      <button>Magnetism</button>
+    </div>
+    <div class="box" id="Biology">
+      <button>Plant Life</button>
+      <button>The Cell</button>
+      <button>Human body</button>
+      <button>Health and Hygiene</button>
+      <button>Adaptation</button>
+    </div>
+    <div class="box" id="Chemistry">
+      <button>Introduction to Chem</button>
+      <button>Elements</button>
+      <button>Matter</button>
+      <button>Water</button>
+      <button>Air and Atmosphere</button>
+    </div>
+    <div class="box" id="his">
+      <button>River Civilization</button>
+      <button>The vedic civilization</button>
+      <button>Mahavira and buddha</button>
+      <button>Rise of kingdoms</button>
+      <button>the Mauryan Empire</button>
+      <button>The Golden Age</button>
+    </div>
+    <div class="box" id="Geography">
+      <button>Geographical Features</button>
+      <button>Landforms</button>
+      <button>Water Bodies</button>
+      <button>Agriculture</button>
+      <button>Minerals</button>
+    </div>
+  </div>
+  
+  <!-- Literature pdfs -->
+  <div class="pdfs hidden pdf-container pdf-lit" id="pdfs_web" >
+    
+    <a href="#">Web Dev Introduction</a>
+    <a href="#">Web Dev Part-I</a>
+    <a href="#">Web Dev Main Course</a>
+    <a href="#">Web Dev Main Explanation</a>
+    <a href="#">Web dev most important part</a>
+    <a href="#">Web Dev Last Part</a>
+  </div>
+  
+  <div class="pdfs hidden pdf-container pdf-lit" id="pdfs_ai">
+    <a href="#">AI Introduction</a>
+    <a href="#">AI Part-I</a>
+    <a href="#">AI Main Course</a>
+    <a href="#">AI Main Explanation</a>
+    <a href="#">AI most important part</a>
+    <a href="#">AI Last Part</a>
+  </div>
+  
+  <div class="pdfs hidden pdf-container pdf-lit" id="pdfs_cyber">
+    <a href="#">Cyber Introduction</a>
+    <a href="#">Cyber Part-I</a>
+    <a href="#">Cyber Main Course</a>
+    <a href="#">Cyber Main Explanation</a>
+    <a href="#">Cyber most important part</a>
+    <a href="#">Cyber Last Part</a>
+  </div>
+  
+  <div class="pdfs hidden pdf-container pdf-lit" id="pdfs_cloud">
+    <a href="#">Cloud Introduction</a>
+    <a href="#">Cloud Part-I</a>
+    <a href="#">Cloud Main Course</a>
+    <a href="#">Cloud Main Explanation</a>
+    <a href="#">Cloud most important part</a>
+    <a href="#">Cloud Last Part</a>
+  </div>
+  
+  <!-- Input for password -->
+  <div  class="hidden" id="passwordPrompt">
+    <h5 id="class_name"></h5>
+    <div  class=" inline-block  prompt" >
+      <label for="password">Enter Password:</label>
+      <input type="password" id="password" class="input">
+      <button  class="btn" id="submitPassword">Submit</button>
+    </div>
+  </div>
+  <!-- Input for password Ends-->
+
+  <div class="iframe-container " id="pdfViewerContainer">
+    <iframe  id="pdfViewer" zoom="1.2" ;></iframe>
+    <!-- Only cover the top portion of the iframe -->
+    <div class="overlay"></div>
+</div>
+  
+  <script src="Class6.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
