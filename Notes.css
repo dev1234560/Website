@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #ffffff;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #1f17ac;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+  }
+  
+
+li a:hover::after{
+    width: 100%;
+}
+
+/* Header styling Ends */
+
+
+/* Notes styling Starts */
+
+.inline-block {
+    display: inline-block;
+}
+
+
+.btns{
+  padding: 6.5em 0.5em 3em 1.5em;
+
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.nav-item a{
+  font-size:larger;
+  font-weight:bolder;
+  /* padding: 0 20px; */
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+}
+.btns button{
+  padding: 5px 10px;
+  margin: 8px;
+
+  font-size: large;
+  font-weight:600;
+  color:rgb(0, 221, 255);
+
+  background-color: #3a3a3a;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+  .box a {
+    display: flex;
+    text-decoration: none;
+
+    font-size: larger;
+    font-weight: 600;
+    color: #5f4fda;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid rgb(40, 40, 29);
+    border-radius: 10px;
+
+    margin: 1em;
+
+    padding: 10px;
+  }
+
+  .box a:hover{
+    background-color: rgba(86, 181, 194, 0.431);
+  }
+
+  img{
+    padding: 8px;
+  }
