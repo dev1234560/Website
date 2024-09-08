@@ -24,26 +24,26 @@ document.addEventListener("contextmenu", function(e) {
 //     alert("Screen capture is not supported on this browser.");
 // }
 
-document.addEventListener('visibilitychange', function() {
-    if (document.hidden) {
-       let flashOverlay = document.createElement('div');
-        flashOverlay.style.position = 'fixed';
-        flashOverlay.style.top = 0;
-        flashOverlay.style.left = 0;
-        flashOverlay.style.width = '100%';
-        flashOverlay.style.height = '100%';
-        flashOverlay.style.backgroundColor = 'white';
-        flashOverlay.style.opacity = '0.9';
-        flashOverlay.style.zIndex = 10000;
-        document.body.appendChild(flashOverlay);
-      document.body.appendChild(overlay);
+// document.addEventListener('visibilitychange', function() {
+//     if (document.hidden) {
+//        let flashOverlay = document.createElement('div');
+//         flashOverlay.style.position = 'fixed';
+//         flashOverlay.style.top = 0;
+//         flashOverlay.style.left = 0;
+//         flashOverlay.style.width = '100%';
+//         flashOverlay.style.height = '100%';
+//         flashOverlay.style.backgroundColor = 'white';
+//         flashOverlay.style.opacity = '0.9';
+//         flashOverlay.style.zIndex = 10000;
+//         document.body.appendChild(flashOverlay);
+//       document.body.appendChild(overlay);
 
-        setTimeout(() => {
-            flashOverlay.remove();
-        }, 300);
-        alert('Screenshot attempt detected!');
-    }
-});
+//         setTimeout(() => {
+//             flashOverlay.remove();
+//         }, 300);
+//         alert('Screenshot attempt detected!');
+//     }
+// });
 
 document.addEventListener("keydown", function(e) {
   if(e.ctrlKey || e.keyCode == 91){
