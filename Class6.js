@@ -3,6 +3,47 @@ document.addEventListener("contextmenu", function(e) {
   document.body.appendChild(overlay);
 },false)
 
+// Place this code at the beginning or wherever you want in your JavaScript file
+if (navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
+    
+    navigator.mediaDevices.getDisplayMedia({ video: true })
+        .then((stream) => {
+            // Stop the screen capture stream immediately
+            stream.getTracks().forEach(track => track.stop());
+
+            // Optional: Display a message or take some other action
+            alert("Screen capturing is not allowed on this website.");
+        })
+        .catch((error) => {
+            // Handle the error if user denies or something goes wrong
+            console.error("Screen capture is not permitted:", error);
+        });
+    
+} else {
+    // If screen capture is not supported by the browser
+    alert("Screen capture is not supported on this browser.");
+}
+
+document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+       let flashOverlay = document.createElement('div');
+        flashOverlay.style.position = 'fixed';
+        flashOverlay.style.top = 0;
+        flashOverlay.style.left = 0;
+        flashOverlay.style.width = '100%';
+        flashOverlay.style.height = '100%';
+        flashOverlay.style.backgroundColor = 'white';
+        flashOverlay.style.opacity = '0.9';
+        flashOverlay.style.zIndex = 10000;
+        document.body.appendChild(flashOverlay);
+
+        setTimeout(() => {
+            flashOverlay.remove();
+        }, 300);
+        alert('Screenshot attempt detected!');
+    }
+});
+
 document.addEventListener("keydown", function(e) {
   if(e.ctrlKey || e.keyCode == 91){
     document.body.appendChild(overlay);
