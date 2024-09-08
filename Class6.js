@@ -1,6 +1,6 @@
 document.addEventListener("contextmenu", function(e) {
-  // e.preventDefault();
-  // document.body.appendChild(overlay);
+  e.preventDefault();
+  document.body.appendChild(overlay);
 },false)
 
 document.addEventListener("keydown", function(e) {
