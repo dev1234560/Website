@@ -167,11 +167,17 @@ main h2{
     color: #005effcf;
     margin-top: 5px;
 }
+img {
+    width: 100%; /* Adjust width to fit containers */
+    max-width: 150px; /* Example max-width for images */
+    height: auto;
+}
 
 .images{
-    display: flex;
-    justify-content: space-evenly;
+      display: flex;
     align-items: center;
+    justify-content: space-around; /* Spreads out items evenly */
+    width: max-content;
     
     padding-top: 2.5rem;
     border-top: 10px;
@@ -201,12 +207,14 @@ main h2{
 
 
 .slide-track{
-    display: flex;
+    display: inline-block;
     animation: scroll 40s linear infinite;
+    white-space: nowrap; /* Ensures the track doesn’t break lines */
+    overflow: hidden;
 
 }
 
-@keyframes scroll{
+/* @keyframes scroll{
     0%{
 
         transform: translateX(0);
@@ -216,6 +224,14 @@ main h2{
 
     100%{
         transform:translateX(calc(-15rem *8))
+    }
+} */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
 
@@ -239,5 +255,15 @@ main h2{
         padding: 2px;
         color: white;
         font-size: 1.2rem;
+    }
+     .slide-track {
+        animation: scroll 60s linear infinite; /* Slow down for smaller screens */
+        overflow: hidden; /* Avoid overflow issues */
+    }
+    
+    .images {
+        display: flex;
+        flex-wrap: nowrap;
+        width: max-content; /* Ensures the images don't wrap */
     }
 }
