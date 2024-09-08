@@ -472,7 +472,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   // Links and their corresponding PDF paths
   const pdfLinks = {
-    "Web Dev Introduction": "LabAssignment (1+3).pdf",
+    "Web Dev Introduction": "https://docs.google.com/document/d/1kd9WImDJUfknC0d8TLwfBqNZvr_IvjcKGfuBE8RrmMo/edit?usp=drive_link&embedded=true",
     "Web Dev Part-I": "files/Alpha Questions.pdf",
     "Web Dev Main Course": "files/AYMAN-RANI-BIRLA-INVOICE.pdf",
     "Web Dev Main Explanation": "files/conclusion (economics topic 2).pdf",
