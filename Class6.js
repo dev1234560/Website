@@ -102,6 +102,7 @@ window.addEventListener('screenshot', function() {
 });
 
 function clearAllPDFs() {
+    document.getElementById('pdfs_web').style.display = 'none';
   const pdfContainers = document.querySelectorAll('.pdf-container');
   pdfContainers.forEach(container => {
     container.classList.remove('container');
