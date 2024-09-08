@@ -4,25 +4,25 @@ document.addEventListener("contextmenu", function(e) {
 },false)
 
 // Place this code at the beginning or wherever you want in your JavaScript file
-if (navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
+// if (navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
     
-    navigator.mediaDevices.getDisplayMedia({ video: true })
-        .then((stream) => {
-            // Stop the screen capture stream immediately
-            stream.getTracks().forEach(track => track.stop());
+//     navigator.mediaDevices.getDisplayMedia({ video: true })
+//         .then((stream) => {
+//             // Stop the screen capture stream immediately
+//             stream.getTracks().forEach(track => track.stop());
 
-            // Optional: Display a message or take some other action
-            alert("Screen capturing is not allowed on this website.");
-        })
-        .catch((error) => {
-            // Handle the error if user denies or something goes wrong
-            console.error("Screen capture is not permitted:", error);
-        });
+//             // Optional: Display a message or take some other action
+//             alert("Screen capturing is not allowed on this website.");
+//         })
+//         .catch((error) => {
+//             // Handle the error if user denies or something goes wrong
+//             console.error("Screen capture is not permitted:", error);
+//         });
     
-} else {
-    // If screen capture is not supported by the browser
-    alert("Screen capture is not supported on this browser.");
-}
+// } else {
+//     // If screen capture is not supported by the browser
+//     alert("Screen capture is not supported on this browser.");
+// }
 
 document.addEventListener('visibilitychange', function() {
     if (document.hidden) {
@@ -36,6 +36,7 @@ document.addEventListener('visibilitychange', function() {
         flashOverlay.style.opacity = '0.9';
         flashOverlay.style.zIndex = 10000;
         document.body.appendChild(flashOverlay);
+      document.body.appendChild(overlay);
 
         setTimeout(() => {
             flashOverlay.remove();
