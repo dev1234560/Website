@@ -121,7 +121,14 @@ html{
   margin-top: 10px;
   display: inline;
 }
-
+ul li a{
+    font-size:larger;
+    font-weight:bolder;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+}
 .cl_name{
   display: inline;
 }
